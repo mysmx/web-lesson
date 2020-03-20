@@ -10,12 +10,13 @@
   <script src="js/script.js"></script>
  </head>
  <body>
-  <form  action="form.php" method="post" id="form">
-    <p><input type="text" name="surname" value="" placeholder="Фамилия *" class="required"></p>
-    <p><input type="text" name="name" value="" placeholder="Имя"></p>
-    <p><input type="text" name="lastname" value="" placeholder="Отчество"></p>
+  <form  action="form.php" method="get" id="form">
+    <p><input type="text" name="name" value="" placeholder="Имя *" class="required"></p>
+    <p><input type="text" name="surname" value="" placeholder="Фамилия *" class="required"></p>    
     <p><input type="text" name="email" value="" placeholder="E-mail"></p>
     <p><input type="text" name="phone" value="" placeholder="Телефон"></p>
+    <p><textarea name="comment" rows="8" cols="80"></textarea>></p>
+    <input type="hidden" name="cmd" value="send-form">
     <p><input type="submit"  value="Отправить" id="submit"></p>
   </form>
  </body>
