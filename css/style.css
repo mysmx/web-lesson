@@ -1,0 +1,15 @@
+input{
+  padding: 10px;
+}
+input[type=submit]{
+  border: 0px;
+  cursor: pointer;
+}
+input[type=submit]:hover{
+  background-color: red;
+  color: white;
+}
+label.error{
+  margin-left: 10px;
+  color: red;
+}
