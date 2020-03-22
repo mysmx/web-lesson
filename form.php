@@ -2,11 +2,7 @@
  <head>
   <meta charset="utf-8">
   <title>Форма отправки</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/localization/messages_ru.min.js"></script>
-  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css">  
  </head>
  <body>
 <?php
