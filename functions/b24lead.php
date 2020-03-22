@@ -11,8 +11,6 @@ define('CRM_PASSWORD', 'develop'); // password of a CRM user
 
 
 function add_lead($postData){
-    // roistat visit
-    $roistatVisitId = array_key_exists('roistat_visit', $_COOKIE) ? $_COOKIE['roistat_visit'] : "неизвестно";
 
 	// get lead data from the form
 
@@ -36,7 +34,7 @@ function add_lead($postData){
 		foreach ($postData as $key => $value)
 			$strPostData .= ($strPostData == '' ? '' : '&').$key.'='.urlencode($value);
 
-        $strPostData .= '&'.'UF_CRM_1532699916'.'='.urlencode($roistatVisitId);
+
 
         $formName = strstr($postData['TITLE'],':');
 
@@ -64,7 +62,7 @@ function add_lead($postData){
 		fclose($fp);
 
 		// cut response headers
-		$response = explode("\r\n\r\n", $result);
+		$response = explode("\r\n\r\n", $result);    
 	  echo 'Отправка формы в Б24 выполнена.';
 	}
 	else
